@@ -1,0 +1,34 @@
+{
+    "Actor": {},
+    "Item":{
+        "types":[
+            "melee-weapon",
+            "ranged-weapon"
+        ],
+        "templates":{
+            "itemDescription":{
+                "description":""
+            }
+        },
+        
+        "melee-weapon": {
+            "templates": [
+                "itemDescription"
+            ],
+            "damage": 0,
+            "damage-type": "cut",
+            "reach": 0,
+            "wt": 0
+        },
+        "ranged-weapon": {
+            "templates": [
+                "itemDescription"
+            ],
+            "damage": 0,
+            "damage-type": "PI",
+            "recoil": 0,
+            "acc": 0,
+            "wt": 0
+        }
+    }
+}

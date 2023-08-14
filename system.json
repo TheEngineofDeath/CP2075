@@ -1,0 +1,29 @@
+{
+    "name": "CP2075", 
+    "title": "GURPS Cyberpunk 2075",
+    "description": "Адаптированная под киберпанк версия GURPS",
+    "author": "The Engine of Death",
+    "version": 0.01,
+    "minimumCoreVersion": "0.6.4",
+    "compatibleCoreVersion": "0.6.4",
+    "esmodules": [
+        "CP2075.js"
+    ],
+    "styles": [
+        "CP2075.css"
+    ],
+    "packs": [
+
+    ],
+    "languages":[
+        {
+            "lang": "ru",
+            "name": "Русский",
+            "path": "lang/ru.json"
+        }
+
+    ],
+    "gridDistance": 1,
+    "gridUnits":"m"
+
+}
