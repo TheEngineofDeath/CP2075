@@ -1,8 +1,8 @@
 export const CP2075 = {};
 
-CP2075.damageTypes = {
-    cut: "CP2075.damage.cut",
-    PI: "CP2075.damage.PI"
+CP2075.damageType = {
+    cut: "CP2075.damageType.cut",
+    PI: "CP2075.damageType.PI"
     };
 
 /*CP2075.rangedWeapon = {
