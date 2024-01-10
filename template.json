@@ -11,7 +11,7 @@
             }
         },
         
-        "meleeWeapon": {
+        "mWeapon": {
             "templates": [
                 "itemDescription"
             ],
@@ -35,9 +35,9 @@
             "acc": 0,
             "wt": 0,
             "rof": 0,
-            "shots" :0,
-            "minST" :0,
-            "bulk" :0,
+            "shots" : 0,
+            "minST" : 0,
+            "bulk" : 0,
             "recoil": 0,
             "lc": 0,
             "cost": 0
