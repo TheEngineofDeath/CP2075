@@ -2,8 +2,8 @@
     "Actor": {},
     "Item":{
         "types":[
-            "meleeWeapon",
-            "rangedWeapon"
+            "mWeapon",
+            "rWeapon"
         ],
         "templates":{
             "itemDescription":{
@@ -26,11 +26,11 @@
             "lc": 0,
             "cost": 0
         },
-        "rangedWeapon": {
+        "rWeapon": {
             "templates": [
                 "itemDescription"
             ],
-            "damage": 0,
+            "damage": "",
             "damageType": "",
             "acc": 0,
             "wt": 0,

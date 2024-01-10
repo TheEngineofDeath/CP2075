@@ -1,0 +1,56 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <header class="sheet-header">
+        <img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64"/>
+        <h1><input name="name" type="text" value="{{item.name}}" placeholder="{{ localize 'Name' }}"/></h1>
+    </header>
+    <div>
+        <table>
+            <tr>
+                <th align="left">{{localize "CP2075.rWeapon.damage"}}</th>
+                <td><input name="data.damage" type="text" value="{{data.damage}}" data-dtype="text"/></td>
+            </tr>
+            <tr>
+                <th align="left">{{localize "CP2075.rWeapon.damageType"}}</th>
+                <td>
+                    <select name="data.damageType">
+                        <option>{{localize "CP2075.damageType.expansive"}}</option>
+                        <option>{{localize "CP2075.damageType.bullet"}}</option>
+                        <option>{{localize "CP2075.damageType.pierce"}}</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th align="left">{{localize "CP2075.rWeapon.acc"}}</th>
+                <td><input name="data.damage" type="text" value="{{data.damage}}" data-dtype="int"/></td>
+            </tr>
+            <tr>
+                <th align="left">{{localize "CP2075.rWeapon.wt"}}</th>
+                <td><input name="data.damage" type="text" value="{{data.damage}}" data-dtype="float"/></td>
+            </tr>    
+            <tr>
+                <th align="left">{{localize "CP2075.rWeapon.rof"}}</th>
+            </tr>    
+            <tr>
+                <th align="left">{{localize "CP2075.rWeapon.shots"}}</th>
+            </tr>    
+            <tr>
+                <th align="left">{{localize "CP2075.rWeapon.minST"}}</th>
+            </tr>    
+            <tr>
+                <th align="left">{{localize "CP2075.rWeapon.bulk"}}</th>
+            </tr>    
+            <tr>
+                <th align="left">{{localize "CP2075.rWeapon.recoil"}}</th>
+            </tr>   
+            <tr>
+                <th align="left">{{localize "CP2075.rWeapon.lc"}}</th>
+            </tr>    
+            <tr>
+                <th align="left">{{localize "CP2075.rWeapon.cost"}}</th>
+            </tr>    
+
+        </table>
+        <textarea name="data.description">{{data.description}}</textarea>
+        {{editor content=data.description target="data.description" button=true owner=owner editable=editable}}
+    </div>
+</form>
