@@ -3,5 +3,71 @@
         <img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64"/>
         <h1><input name="name" type="text" value="{{item.name}}" placeholder="{{ localize 'Name' }}"/></h1>
     </header>
-    <p>MELEE WEAPON!</p>
+    <div>
+        <table>
+            <tr>
+                <th align="left">{{localize "CP2075.mWeapon.aattackType"}}</th>
+                <td>
+                    <select name="system.aattackType">
+                        <option>{{localize "CP2075.attackType.swing"}}</option>
+                        <option>{{localize "CP2075.attackType.thrust"}}</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="system.battackType">
+                        <option>{{localize "CP2075.attackType.swing"}}</option>
+                        <option>{{localize "CP2075.attackType.thrust"}}</option>
+                    </select>
+                </td>
+            </tr>
+                <tr>
+                    <th align="left">{{localize "CP2075.mWeapon.adamage"}}</th>
+                    <td><input name="system.adamage" type="text" value="{{system.adamage}}" system-dtype="text"/></td>
+                    <td><input name="system.bdamage" type="text" value="{{system.bdamage}}" system-dtype="text"/></td>
+                </tr>
+
+                <tr>
+                    <th align="left">{{localize "CP2075.mWeapon.adamageType"}}</th>
+                    <td>
+                        <select name="system.adamageType">
+                            <option>{{localize "CP2075.damageType.cut"}}</option>
+                            <option>{{localize "CP2075.damageType.imp"}}</option>
+                            <option>{{localize "CP2075.damageType.cr"}}</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="system.bdamageType">
+                            <option>{{localize "CP2075.damageType.cut"}}</option>
+                            <option>{{localize "CP2075.damageType.imp"}}</option>
+                            <option>{{localize "CP2075.damageType.cr"}}</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th align="left">{{localize "CP2075.mWeapon.areach"}}</th>
+                    <td><input name="system.areach" type="text" value="{{system.areach}}" system-dtype="Number"/></td>
+                    <td><input name="system.breach" type="text" value="{{system.breach}}" system-dtype="Number"/></td>
+                </tr>
+                <tr>
+                    <th align="left">{{localize "CP2075.mWeapon.parry"}}</th>
+                    <td><input name="system.parry" type="text" value="{{system.parry}}" system-dtype="Number"/></td>
+                </tr>
+                <tr>
+                    <th align="left">{{localize "CP2075.mWeapon.wt"}}</th>
+                    <td><input name="system.wt" type="text" value="{{system.wt}}" system-dtype="Number"/></td>
+                </tr>
+                <tr>
+                    <th align="left">{{localize "CP2075.mWeapon.minST"}}</th>
+                    <td><input name="system.minST" type="text" value="{{system.minST}}" system-dtype="Number"/></td>                   
+                </tr>
+                <tr>
+                    <th align="left">{{localize "CP2075.mWeapon.lc"}}</th>
+                    <td><input name="system.lc" type="text" value="{{system.lc}}" system-dtype="Number"/></td>                   
+                </tr>                   
+                <tr>
+                    <th align="left">{{localize "CP2075.mWeapon.cost"}}</th>
+                    <td><input name="system.cost" type="text" value="{{system.cost}}" system-dtype="Number"/></td>                   
+                </tr> 
+        </table>
+    </div>
 </form>

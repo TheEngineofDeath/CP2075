@@ -1,63 +1,62 @@
 <form class="{{cssClass}}" autocomplete="off">
     <header class="sheet-header">
-        <img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64"/>
+        <img src="{{item.img}}" system-edit="img" title="{{item.name}}" height="64" width="64"/>
         <h1><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
     </header>
     <div>
         <table>
             <tr>
                 <th align="left">{{localize "CP2075.rWeapon.damage"}}</th>
-                <td><input name="data.damage" type="text" value="{{data.damage}}" data-dtype="text"/></td>
+                <td><input name="system.damage" type="text" value="{{system.damage}}" system-dtype="text"/></td>
             </tr>
             <tr>
                 <th align="left">{{localize "CP2075.rWeapon.damageType"}}</th>
                 <td>
-                    <select name="data.damageType">
-                        <option>{{localize "CP2075.damageType.expansive"}}</option>
+                    <select name="system.damageType">
                         <option>{{localize "CP2075.damageType.bullet"}}</option>
+                        <option>{{localize "CP2075.damageType.expansive"}}</option>
                         <option>{{localize "CP2075.damageType.pierce"}}</option>
                     </select>
                 </td>
             </tr>
             <tr>
                 <th align="left">{{localize "CP2075.rWeapon.acc"}}</th>
-                <td><input name="data.acc" type="text" value="{{data.acc}}" data-dtype="Number"/></td>
+                <td><input name="system.acc" type="text" value="{{system.acc}}" system-dtype="Number"/></td>
             </tr>
             <tr>
                 <th align="left">{{localize "CP2075.rWeapon.wt"}}</th>
-                <td><input name="data.wt" type="text" value="{{data.wt}}" data-dtype="Number"/></td>
+                <td><input name="system.wt" type="text" value="{{system.wt}}" system-dtype="Number"/></td>
             </tr>    
             <tr>
                 <th align="left">{{localize "CP2075.rWeapon.rof"}}</th>
-                <td><input name="data.rof" type="text" value="{{data.rof}}" data-dtype="Number"/></td>
+                <td><input name="system.rof" type="text" value="{{system.rof}}" system-dtype="Number"/></td>
             </tr>    
             <tr>
                 <th align="left">{{localize "CP2075.rWeapon.shots"}}</th>
-                <td><input name="data.shots" type="text" value="{{data.shots}}" data-dtype="Number"/></td>
+                <td><input name="system.shots" type="text" value="{{system.shots}}" system-dtype="Number"/></td>
             </tr>    
             <tr>
                 <th align="left">{{localize "CP2075.rWeapon.minST"}}</th>
-                <td><input name="data.minST" type="text" value="{{data.minST}}" data-dtype="Number"/></td>
+                <td><input name="system.minST" type="text" value="{{system.minST}}" system-dtype="Number"/></td>
             </tr>    
             <tr>
                 <th align="left">{{localize "CP2075.rWeapon.bulk"}}</th>
-                <td><input name="data.bulk" type="text" value="{{data.bulk}}" data-dtype="Number"/></td>
+                <td><input name="system.bulk" type="text" value="{{system.bulk}}" system-dtype="Number"/></td>
             </tr>    
             <tr>
                 <th align="left">{{localize "CP2075.rWeapon.recoil"}}</th>
-                <td><input name="data.recoil" type="text" value="{{data.recoil}}" data-dtype="Number"/></td>
+                <td><input name="system.recoil" type="text" value="{{system.recoil}}" system-dtype="Number"/></td>
             </tr>   
             <tr>
                 <th align="left">{{localize "CP2075.rWeapon.lc"}}</th>
-                <td><input name="data.lc" type="text" value="{{data.lc}}" data-dtype="Number"/></td>
+                <td><input name="system.lc" type="text" value="{{system.lc}}" system-dtype="Number"/></td>
             </tr>    
             <tr>
                 <th align="left">{{localize "CP2075.rWeapon.cost"}}</th>
-                <td><input name="data.cost" type="text" value="{{data.cost}}" data-dtype="Number"/></td>
+                <td><input name="system.cost" type="text" value="{{system.cost}}" system-dtype="Number"/></td>
             </tr>    
 
         </table>
-        <textarea name="data.description">{{data.description}}</textarea>
-        {{editor content=data.description target="data.description" button=true owner=owner editable=editable}}
+        <textarea name="system.description">{{system.description}}</textarea>
     </div>
 </form>

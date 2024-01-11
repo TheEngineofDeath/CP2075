@@ -1,13 +1,18 @@
 export default class CP2075ItemSheet extends ItemSheet {
     get template() {
-        return `systems/CP2075/templates/sheets/${this.item.data.type}-sheet.html`;
+        return `systems/CP2075/templates/sheets/${this.item.type}-sheet.html`;
     }
 
     getData(){
-        const data = super.getData();
-
-        data.config = CONFIG.CP2075;
-
-        return data;
+        const context = super.getData();
+        const itemData = context.item;
+        context.system = itemData.system;
+        context.flags = itemData.flags;
+    
+        return context;
     }
+    activateListeners(html) {
+        super.activateListeners(html);
+        if (!this.isEditable) return;
+    }    
 }

@@ -12,20 +12,21 @@
         },
         
         "mWeapon": {
-            "templates": [
-                "itemDescription"
-            ],
-            "damage": 0,
-            "damageType": "",
-            "reach": 0,
+            "aattackType": "",
+            "battackType": "",
+            "adamage": 0,
+            "bdamage": 0,
+            "adamageType": "",
+            "bdamageType": "",
+            "areach": 0,
+            "breach": 0,
             "parry":0,
             "wt": 0,
-            "minST": 0,
-            "handling": false,
-            "ready": false,
+            "minST" : 0,
             "lc": 0,
-            "cost": 0
+            "cost": 0 
         },
+        
         "rWeapon": {
             "templates": [
                 "itemDescription"
