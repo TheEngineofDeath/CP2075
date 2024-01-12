@@ -48,26 +48,32 @@
 
             "sAttr":{
                 "HP":{
+                    "bonus":0,
                     "value":10,
                     "points":5
                 },
                 "FP":{
+                    "bonus":0,
                     "value":10,
                     "points":5
                 },
                 "Move":{
+                    "bonus":0,
                     "value":10,
                     "points":5
                 }, 
                 "Dodge":{
+                    "bonus":0,
                     "value":10,
                     "points":5
                 }, 
                 "LST":{
+                    "bonus":0,
                     "value":10,
                     "points":5
                 }, 
                 "SST":{
+                    "bonus":0,
                     "value":10,
                     "points":5
                 }, 

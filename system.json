@@ -10,7 +10,7 @@
         "CP2075.js"
     ],
     "styles": [
-        "CP2075.css"
+        "./less/CP2075.css"
     ],
     "packs": [
 

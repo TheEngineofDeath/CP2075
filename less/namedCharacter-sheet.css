@@ -1,0 +1,10 @@
+.CP2075.sheet.namedCharacter .mainbar {
+  display: flex;
+  flex-direction: column;
+}
+.CP2075.sheet.namedCharacter .mAttrForm {
+  width: 25%;
+}
+.CP2075.sheet.namedCharacter .sAttrForm {
+  width: 25%;
+}

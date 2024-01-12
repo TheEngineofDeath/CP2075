@@ -5,13 +5,17 @@
                 {{data.title}}
             </div>
         </h1>
-        <img src="{{actor.img}}" data-edit="img" title="{{actor.name}}"/>      
+        <img src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="128" width="128"/>      
     </div>
 
-    <div class="mAttrForm">
- {{> "systems/CP2075/templates/partials/character-mAttr-block.hbs"}}              
-    </div>
-    <div class="sAttrForm">
- {{> "systems/CP2075/templates/partials/character-sAttr-block.hbs"}}              
-    </div>                    
+<table>
+    <tr>
+        <td> 
+            {{> "systems/CP2075/templates/partials/character-mAttr-block.hbs"}}
+        </td>
+        <td> 
+            {{> "systems/CP2075/templates/partials/character-sAttr-block.hbs"}}  
+        </td>     
+    </tr>
+</table>                
 </form>

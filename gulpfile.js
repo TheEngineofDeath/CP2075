@@ -6,7 +6,7 @@ gulp.task('less', function (cb) {
     .src('less/CP2075.less')
     .pipe(less())
     .pipe(gulp.dest("./"));
-cb();
+  cb();
 });
 
 gulp.task(
