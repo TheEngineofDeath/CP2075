@@ -1,4 +1,12 @@
 export default class CP2075ItemSheet extends ItemSheet {
+
+    static get defaultOptions() {
+        return mergeObject(super.defaultOptions, {
+            width: 360,
+            height: 600,
+            classes: ["CP2075", "sheet", "item"]
+        });
+    }
     get template() {
         return `systems/CP2075/templates/sheets/${this.item.type}-sheet.html`;
     }

@@ -1,0 +1,7 @@
+.sheet form {
+    display: flex;
+    flex-direction: column;
+}
+.sheet .mAttr {
+    width: 25%;
+}

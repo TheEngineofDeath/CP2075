@@ -1,5 +1,13 @@
 {
     "CP2075": {
+        "Item":{
+            "types": {
+                "rWeapon": "Стрелковое",
+                "mWeapon": "Ближнего боя",
+                "grenade": "Граната"
+            }
+        },
+        
         "attackType":{
             "swing": "Рубящий",
             "thrust": "Колющий"

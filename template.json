@@ -1,9 +1,165 @@
 {
-    "Actor": {},
+    "Actor": {
+        "types":[
+            "pChar",
+            "npc",
+            "ally",
+            "foe"
+        ],
+        "templates":{
+            "mAttr": { 
+            "ST":{
+                    "value":10,
+                    "points":10
+            },
+            "DX":{
+                    "value":10,
+                    "points":10
+                },
+            "RF":{
+                    "value":10,
+                    "points":10
+                },
+            "AW":{
+                    "value":10,
+                    "points":10
+                },
+            "CH":{
+                    "value":10,
+                    "points":10
+                },
+            "IQ":{
+                    "value":10,
+                    "points":10
+                },
+            "TC":{
+                    "value":10,
+                    "points":10
+                },
+            "WL":{
+                    "value":10,
+                    "points":10
+                },
+                "ED":{
+                    "value":10,
+                    "points":10
+                }
+            },
+
+            "sAttr":{
+                "HP":{
+                    "value":10,
+                    "points":5
+                },
+                "FP":{
+                    "value":10,
+                    "points":5
+                },
+                "Move":{
+                    "value":10,
+                    "points":5
+                }, 
+                "Dodge":{
+                    "value":10,
+                    "points":5
+                }, 
+                "LST":{
+                    "value":10,
+                    "points":5
+                }, 
+                "SST":{
+                    "value":10,
+                    "points":5
+                }, 
+                "Hum":{
+                    "value":50,
+                    "max":50
+                },
+                "thrust": "",
+                "swing": ""                      
+            }
+        },
+        "traits": {
+            "title": "",
+            "height": "",
+            "weight": "",
+            "age": "",
+            "birthday": "",
+            "gender": "",
+            "eyes": "",
+            "hair": "",
+            "hand": "",
+            "skin": "",
+            "player": ""
+          },
+
+          "totalpoints": {
+            "attributes": 0,
+            "ads": 0,
+            "disads": 0,
+            "quirks": 0,
+            "skills": 0,
+            "spells": 0,
+            "total": 150,
+            "unspent": 0
+          },
+
+          "detection":{
+             "hearing": 0,
+              "tastesmell": 0,
+              "vision": 0,
+              "touch": 0
+            },
+          "ads": {},
+          "languages": {},
+          "skills": {},
+          "spells": {},
+          "money": {},
+        "pChar": {
+            "templates":[
+                "mAttr",
+                "sAttr",
+                "traits",
+                "totalpoints",
+                "detection",
+                "ads",
+                "languages",
+                "skills",
+                "spells",
+                "money"
+            ]
+        },
+        "npc": {
+            "templates":[
+                "mAttr",
+                "sAttr",
+                "skills"
+            ]
+        },
+        "ally":{
+            "templates":[
+                "mAttr",
+                "sAttr",
+                "skills",
+                "spells"
+            ]
+        },
+        "foe": {
+            "templates":[
+                "mAttr",
+                "sAttr",
+                "detection",
+                "ads",
+                "skills",
+                "spells"
+            ]
+        }       
+    },
     "Item":{
         "types":[
             "mWeapon",
-            "rWeapon"
+            "rWeapon",
+            "grenade"
         ],
         "templates":{
             "itemDescription":{
@@ -42,6 +198,12 @@
             "recoil": 0,
             "lc": 0,
             "cost": 0
+        },
+        "grenade": {
+            "templates": [
+                "itemDescription"
+            ],
+            "damage":""
         }
     }
 }

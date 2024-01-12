@@ -1,0 +1,17 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <div class="mainbar"> 
+        <h1>
+            <div data-edit="data.title" contenteditable>
+                {{data.title}}
+            </div>
+        </h1>
+        <img src="{{actor.img}}" data-edit="img" title="{{actor.name}}"/>      
+    </div>
+
+    <div class="mAttrForm">
+ {{> "systems/CP2075/templates/partials/character-mAttr-block.hbs"}}              
+    </div>
+    <div class="sAttrForm">
+ {{> "systems/CP2075/templates/partials/character-sAttr-block.hbs"}}              
+    </div>                    
+</form>
